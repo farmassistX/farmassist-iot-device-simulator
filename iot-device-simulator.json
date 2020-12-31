@@ -1,0 +1,1751 @@
+[
+    {
+        "id": "bb155f83.a4277",
+        "type": "tab",
+        "label": "main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7f15f7f9.621a48",
+        "type": "subflow",
+        "name": "airTemperature",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 320,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "1624d34d.8c440d"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "13b9c3ef.f5db2c",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "5d3f7c11.023534",
+        "type": "subflow",
+        "name": "airHumidity",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 320,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "c620f442.386f18"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "ed27784e.86a9d8",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "41719d6c.3cfb44",
+        "type": "subflow",
+        "name": "soilMoisture",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 320,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "66d8b839.f565a8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "d0abdcdc.837d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "f9d383cb.41058",
+        "type": "subflow",
+        "name": "soilpH",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 320,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "a841f15a.dfbdf"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 880,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "bdca0114.d69de",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7a111b85.eca174",
+        "type": "subflow",
+        "name": "soilSalinity",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 320,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "578fce88.15de5"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 860,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "f33a2102.a728",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "74df1345.04015c",
+        "type": "firebaseCertificate",
+        "z": "",
+        "firebaseurl": "farmassist-c27d9-default-rtdb",
+        "loginType": "none"
+    },
+    {
+        "id": "8c5b05a2.ccb108",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#4a8a3d",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#4a8a3d",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4a8a3d",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6cb75c",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4a8a3d",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "IoT Device Simulator",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d82b4e88.7d197",
+        "type": "ui_tab",
+        "z": "",
+        "name": "IoT Device Simulator",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a1f71297.5b069",
+        "type": "ui_group",
+        "z": "",
+        "name": "Simulation Control",
+        "tab": "d82b4e88.7d197",
+        "order": 1,
+        "disp": true,
+        "width": "25",
+        "collapse": false
+    },
+    {
+        "id": "5d47cc2.fe17834",
+        "type": "ui_group",
+        "z": "",
+        "name": "Air Temperature",
+        "tab": "d82b4e88.7d197",
+        "order": 3,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "856d803c.8b0cc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Air Humidity",
+        "tab": "d82b4e88.7d197",
+        "order": 2,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "b9c3ab84.f017f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Soil Moisture",
+        "tab": "d82b4e88.7d197",
+        "order": 4,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "99a1466b.ac8278",
+        "type": "ui_group",
+        "z": "",
+        "name": "Soil pH",
+        "tab": "d82b4e88.7d197",
+        "order": 5,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "bc339738.e6a1e8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Soil Salinity",
+        "tab": "d82b4e88.7d197",
+        "order": 6,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "13f27471.8ac73c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "91dd813.4ee908",
+        "order": 8,
+        "width": "0",
+        "height": "0"
+    },
+    {
+        "id": "bb58c10d.e7b37",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "88de906.e68327",
+        "order": 7,
+        "width": "4",
+        "height": "18"
+    },
+    {
+        "id": "b1d0e473.439698",
+        "type": "addFirebase",
+        "z": "bb155f83.a4277",
+        "firebaseCertificate": "74df1345.04015c",
+        "client_email": "",
+        "private_key": "",
+        "data": "",
+        "childpath": "telemetry_data/jEFfkJOg9eU1aWaKblzxFV51qWE3/moisture",
+        "propertyType": "str",
+        "method": "update",
+        "newchildpath": "",
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "7c8b78a0.1d4308"
+            ]
+        ]
+    },
+    {
+        "id": "23447946.4dc476",
+        "type": "inject",
+        "z": "bb155f83.a4277",
+        "name": "Timestamp",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "db2c7552.3980f8"
+            ]
+        ]
+    },
+    {
+        "id": "bf37538d.4e7b9",
+        "type": "ui_switch",
+        "z": "bb155f83.a4277",
+        "name": "Start/Stop",
+        "label": "Start/Stop Simulation",
+        "tooltip": "Start sending telemetry data to Firebase Realtime Database",
+        "group": "a1f71297.5b069",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "gate",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "db2c7552.3980f8"
+            ]
+        ]
+    },
+    {
+        "id": "3c7bbdb4.397652",
+        "type": "ui_slider",
+        "z": "7f15f7f9.621a48",
+        "name": "Min",
+        "label": "Min",
+        "tooltip": "Minimum value of air temperature",
+        "group": "5d47cc2.fe17834",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "3cc63cd5.bfd614",
+                "19e8c238.3d103e"
+            ]
+        ]
+    },
+    {
+        "id": "de94d6da.924528",
+        "type": "ui_slider",
+        "z": "7f15f7f9.621a48",
+        "name": "Max",
+        "label": "Max",
+        "tooltip": "Maximum value of air temperature",
+        "group": "5d47cc2.fe17834",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "bc16f7a3.5459e8",
+                "af5ddc0e.7a70d"
+            ]
+        ]
+    },
+    {
+        "id": "b4177b1d.a5f0b8",
+        "type": "subflow:7f15f7f9.621a48",
+        "z": "bb155f83.a4277",
+        "name": "airTemperature",
+        "env": [],
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "663e13b2.82511c"
+            ]
+        ]
+    },
+    {
+        "id": "3cc63cd5.bfd614",
+        "type": "ui_text",
+        "z": "7f15f7f9.621a48",
+        "group": "5d47cc2.fe17834",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "bc16f7a3.5459e8",
+        "type": "ui_text",
+        "z": "7f15f7f9.621a48",
+        "group": "5d47cc2.fe17834",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e2b7dec9.cfb4",
+        "type": "subflow:5d3f7c11.023534",
+        "z": "bb155f83.a4277",
+        "name": "airHumidity",
+        "env": [],
+        "x": 490,
+        "y": 140,
+        "wires": [
+            [
+                "fe4fd7ce.70c838"
+            ]
+        ]
+    },
+    {
+        "id": "22c0bacc.5c2df6",
+        "type": "subflow:41719d6c.3cfb44",
+        "z": "bb155f83.a4277",
+        "name": "soilMoisture",
+        "env": [],
+        "x": 490,
+        "y": 300,
+        "wires": [
+            [
+                "b1d0e473.439698"
+            ]
+        ]
+    },
+    {
+        "id": "1f165dbf.a39cb2",
+        "type": "subflow:f9d383cb.41058",
+        "z": "bb155f83.a4277",
+        "name": "soilpH",
+        "env": [],
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "4085dcbe.3c7024"
+            ]
+        ]
+    },
+    {
+        "id": "636bbabe.171a84",
+        "type": "subflow:7a111b85.eca174",
+        "z": "bb155f83.a4277",
+        "name": "soilSalinity",
+        "env": [],
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "59fd8bd1.dc7b84"
+            ]
+        ]
+    },
+    {
+        "id": "19e8c238.3d103e",
+        "type": "function",
+        "z": "7f15f7f9.621a48",
+        "name": "minValue",
+        "func": "flow.set(\"airTemperatureMin\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "1624d34d.8c440d"
+            ]
+        ]
+    },
+    {
+        "id": "af5ddc0e.7a70d",
+        "type": "function",
+        "z": "7f15f7f9.621a48",
+        "name": "maxValue",
+        "func": "flow.set(\"airTemperatureMax\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "1624d34d.8c440d"
+            ]
+        ]
+    },
+    {
+        "id": "1624d34d.8c440d",
+        "type": "function",
+        "z": "7f15f7f9.621a48",
+        "name": "airTemperature",
+        "func": "if (global.get(\"control\") === true) {\n    let min = flow.get(\"airTemperatureMin\");\n    let max = flow.get(\"airTemperatureMax\");\n    let airTemperature = (Math.random() * (max - min) + min).toFixed(2);\n    global.set(\"airTemperature\", airTemperature);\n    msg.payload = airTemperature;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "c5dd25cb.aafdd8",
+                "5e05ee13.787a1",
+                "13b9c3ef.f5db2c"
+            ]
+        ]
+    },
+    {
+        "id": "c5dd25cb.aafdd8",
+        "type": "ui_gauge",
+        "z": "7f15f7f9.621a48",
+        "name": "airTemperatureReading",
+        "group": "5d47cc2.fe17834",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "°C",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 750,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5e05ee13.787a1",
+        "type": "ui_chart",
+        "z": "7f15f7f9.621a48",
+        "name": "airTemperatureChart",
+        "group": "5d47cc2.fe17834",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Air temperature last minute",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Awaiting new data",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 740,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db2c7552.3980f8",
+        "type": "function",
+        "z": "bb155f83.a4277",
+        "name": "control",
+        "func": "if (msg.topic === \"gate\") {\n    context.pass = (msg.payload === true) ? true : false;\n    global.set(\"control\", context.pass);\n    return null;\n}\nif (context.pass) {\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "e2b7dec9.cfb4",
+                "22c0bacc.5c2df6",
+                "b4177b1d.a5f0b8",
+                "1f165dbf.a39cb2",
+                "636bbabe.171a84"
+            ]
+        ]
+    },
+    {
+        "id": "4befd78.7f55828",
+        "type": "ui_slider",
+        "z": "5d3f7c11.023534",
+        "name": "Min",
+        "label": "Min",
+        "tooltip": "Minimum value of air humidity",
+        "group": "856d803c.8b0cc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "8baae11d.e51f8",
+                "fde2eb98.eee518"
+            ]
+        ]
+    },
+    {
+        "id": "1ac7bd1.46aae43",
+        "type": "ui_slider",
+        "z": "5d3f7c11.023534",
+        "name": "Max",
+        "label": "Max",
+        "tooltip": "Maximum value of air humidity",
+        "group": "856d803c.8b0cc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "ba3e7660.b71498",
+                "1b3d24ba.a7f7fb"
+            ]
+        ]
+    },
+    {
+        "id": "8baae11d.e51f8",
+        "type": "ui_text",
+        "z": "5d3f7c11.023534",
+        "group": "856d803c.8b0cc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ba3e7660.b71498",
+        "type": "ui_text",
+        "z": "5d3f7c11.023534",
+        "group": "856d803c.8b0cc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "fde2eb98.eee518",
+        "type": "function",
+        "z": "5d3f7c11.023534",
+        "name": "minValue",
+        "func": "flow.set(\"airHumidityMin\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "c620f442.386f18"
+            ]
+        ]
+    },
+    {
+        "id": "1b3d24ba.a7f7fb",
+        "type": "function",
+        "z": "5d3f7c11.023534",
+        "name": "maxValue",
+        "func": "flow.set(\"airHumidityMax\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "c620f442.386f18"
+            ]
+        ]
+    },
+    {
+        "id": "c620f442.386f18",
+        "type": "function",
+        "z": "5d3f7c11.023534",
+        "name": "airHumidity",
+        "func": "if (global.get(\"control\") === true) {\n    let min = flow.get(\"airHumidityMin\");\n    let max = flow.get(\"airHumidityMax\");\n    let airHumidity = (Math.random() * (max - min) + min).toFixed(2);\n    global.set(\"airHumidity\", airHumidity);\n    msg.payload = airHumidity;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "1b3ce38d.277eac",
+                "ffda1a6.b3b41e8",
+                "ed27784e.86a9d8"
+            ]
+        ]
+    },
+    {
+        "id": "1b3ce38d.277eac",
+        "type": "ui_gauge",
+        "z": "5d3f7c11.023534",
+        "name": "airHumidityReading",
+        "group": "856d803c.8b0cc",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "%",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 730,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ffda1a6.b3b41e8",
+        "type": "ui_chart",
+        "z": "5d3f7c11.023534",
+        "name": "airHumidityChart",
+        "group": "856d803c.8b0cc",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Air humidity last minute",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Awaiting new data",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 730,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "182fcb04.d29485",
+        "type": "ui_slider",
+        "z": "f9d383cb.41058",
+        "name": "Min",
+        "label": "Min",
+        "tooltip": "Minimum value of soil pH",
+        "group": "99a1466b.ac8278",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "438558f7.43fa58",
+                "59a3bae8.75fab4"
+            ]
+        ]
+    },
+    {
+        "id": "20e93046.90f84",
+        "type": "ui_slider",
+        "z": "f9d383cb.41058",
+        "name": "Max",
+        "label": "Max",
+        "tooltip": "Maximum value of soil pH",
+        "group": "99a1466b.ac8278",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "69c13815.f100c8",
+                "5ca1b6da.29b658"
+            ]
+        ]
+    },
+    {
+        "id": "438558f7.43fa58",
+        "type": "ui_text",
+        "z": "f9d383cb.41058",
+        "group": "99a1466b.ac8278",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "69c13815.f100c8",
+        "type": "ui_text",
+        "z": "f9d383cb.41058",
+        "group": "99a1466b.ac8278",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "59a3bae8.75fab4",
+        "type": "function",
+        "z": "f9d383cb.41058",
+        "name": "minValue",
+        "func": "flow.set(\"soilpHMin\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "a841f15a.dfbdf"
+            ]
+        ]
+    },
+    {
+        "id": "5ca1b6da.29b658",
+        "type": "function",
+        "z": "f9d383cb.41058",
+        "name": "maxValue",
+        "func": "flow.set(\"soilpHMax\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "a841f15a.dfbdf"
+            ]
+        ]
+    },
+    {
+        "id": "a841f15a.dfbdf",
+        "type": "function",
+        "z": "f9d383cb.41058",
+        "name": "soilpH",
+        "func": "if (global.get(\"control\") === true) {\n    let min = flow.get(\"soilpHMin\");\n    let max = flow.get(\"soilpHMax\");\n    let soilpH = (Math.random() * (max - min) + min).toFixed(2);\n    global.set(\"soilpH\", soilpH);\n    msg.payload = soilpH;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "d342e64f.727438",
+                "6d157a2c.bf8b94",
+                "bdca0114.d69de"
+            ]
+        ]
+    },
+    {
+        "id": "d342e64f.727438",
+        "type": "ui_gauge",
+        "z": "f9d383cb.41058",
+        "name": "soilpHReading",
+        "group": "99a1466b.ac8278",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "pH",
+        "label": "pH",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 720,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6d157a2c.bf8b94",
+        "type": "ui_chart",
+        "z": "f9d383cb.41058",
+        "name": "soilpHChart",
+        "group": "99a1466b.ac8278",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Soil pH last minute",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Awaiting new data",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 710,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41bf3400.90221c",
+        "type": "ui_slider",
+        "z": "7a111b85.eca174",
+        "name": "Min",
+        "label": "Min",
+        "tooltip": "Minimum value of soil salinity",
+        "group": "bc339738.e6a1e8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "fdf0cc7c.4ecee",
+                "282064d6.5f80bc"
+            ]
+        ]
+    },
+    {
+        "id": "1ffabc67.81cd24",
+        "type": "ui_slider",
+        "z": "7a111b85.eca174",
+        "name": "Max",
+        "label": "Max",
+        "tooltip": "Maximum value of soil salinity",
+        "group": "bc339738.e6a1e8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "bf135961.f055d8",
+                "3c191757.18a9c8"
+            ]
+        ]
+    },
+    {
+        "id": "fdf0cc7c.4ecee",
+        "type": "ui_text",
+        "z": "7a111b85.eca174",
+        "group": "bc339738.e6a1e8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "bf135961.f055d8",
+        "type": "ui_text",
+        "z": "7a111b85.eca174",
+        "group": "bc339738.e6a1e8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "282064d6.5f80bc",
+        "type": "function",
+        "z": "7a111b85.eca174",
+        "name": "minValue",
+        "func": "flow.set(\"soilSalinityMin\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "578fce88.15de5"
+            ]
+        ]
+    },
+    {
+        "id": "3c191757.18a9c8",
+        "type": "function",
+        "z": "7a111b85.eca174",
+        "name": "maxValue",
+        "func": "flow.set(\"soilSalinityMax\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "578fce88.15de5"
+            ]
+        ]
+    },
+    {
+        "id": "578fce88.15de5",
+        "type": "function",
+        "z": "7a111b85.eca174",
+        "name": "soilSalinity",
+        "func": "if (global.get(\"control\") === true) {\n    let min = flow.get(\"soilSalinityMin\");\n    let max = flow.get(\"soilSalinityMax\");\n    let soilSalinity = (Math.random() * (max - min) + min).toFixed(2);\n    global.set(\"soilSalinity\", soilSalinity);\n    msg.payload = soilSalinity;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "42d8c053.597ff",
+                "5aa01ca0.9391c4",
+                "f33a2102.a728"
+            ]
+        ]
+    },
+    {
+        "id": "42d8c053.597ff",
+        "type": "ui_gauge",
+        "z": "7a111b85.eca174",
+        "name": "soilSalinityReading",
+        "group": "bc339738.e6a1e8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "mS/cm",
+        "label": "mS/cm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 730,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5aa01ca0.9391c4",
+        "type": "ui_chart",
+        "z": "7a111b85.eca174",
+        "name": "soilSalinityChart",
+        "group": "bc339738.e6a1e8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Soil salinity last minute",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Awaiting new data",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 720,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2111e35.d18c81c",
+        "type": "ui_slider",
+        "z": "41719d6c.3cfb44",
+        "name": "Min",
+        "label": "Min",
+        "tooltip": "Minimum value of soil moisture",
+        "group": "b9c3ab84.f017f8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "8167486c.537088",
+                "f1cf97bd.f58b08"
+            ]
+        ]
+    },
+    {
+        "id": "b69c67dc.a3f5e8",
+        "type": "ui_slider",
+        "z": "41719d6c.3cfb44",
+        "name": "Max",
+        "label": "Max",
+        "tooltip": "Maximum value of soil moisture",
+        "group": "b9c3ab84.f017f8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "ae5b6533.924748",
+                "8bb90da8.cfe89"
+            ]
+        ]
+    },
+    {
+        "id": "8167486c.537088",
+        "type": "ui_text",
+        "z": "41719d6c.3cfb44",
+        "group": "b9c3ab84.f017f8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ae5b6533.924748",
+        "type": "ui_text",
+        "z": "41719d6c.3cfb44",
+        "group": "b9c3ab84.f017f8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Value",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 250,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f1cf97bd.f58b08",
+        "type": "function",
+        "z": "41719d6c.3cfb44",
+        "name": "minValue",
+        "func": "flow.set(\"soilMoistureMin\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "66d8b839.f565a8"
+            ]
+        ]
+    },
+    {
+        "id": "8bb90da8.cfe89",
+        "type": "function",
+        "z": "41719d6c.3cfb44",
+        "name": "maxValue",
+        "func": "flow.set(\"soilMoistureMax\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "66d8b839.f565a8"
+            ]
+        ]
+    },
+    {
+        "id": "66d8b839.f565a8",
+        "type": "function",
+        "z": "41719d6c.3cfb44",
+        "name": "soilMoisture",
+        "func": "if (global.get(\"control\") === true) {\n    let min = flow.get(\"soilMoistureMin\");\n    let max = flow.get(\"soilMoistureMax\");\n    let soilMoisture = (Math.random() * (max - min) + min).toFixed(2);\n    global.set(\"soilMoisture\", soilMoisture);\n    msg.payload = soilMoisture;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "a0795cf.c2a64a",
+                "4f0a0648.5b31a8",
+                "d0abdcdc.837d"
+            ]
+        ]
+    },
+    {
+        "id": "a0795cf.c2a64a",
+        "type": "ui_gauge",
+        "z": "41719d6c.3cfb44",
+        "name": "soilMoistureReading",
+        "group": "b9c3ab84.f017f8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "%",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 740,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4f0a0648.5b31a8",
+        "type": "ui_chart",
+        "z": "41719d6c.3cfb44",
+        "name": "soilMoistureChart",
+        "group": "b9c3ab84.f017f8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Soil moisture last minute",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Awaiting new data",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 730,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13b9c3ef.f5db2c",
+        "type": "function",
+        "z": "7f15f7f9.621a48",
+        "name": "airTemperatureMsg",
+        "func": "if (global.get(\"control\") === true) {\n    let timestamp = Date.now();\n    let airTemperature = global.get(\"airTemperature\");\n    let payload = {\n        [timestamp]: airTemperature,\n    };\n    msg.payload = payload;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 730,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed27784e.86a9d8",
+        "type": "function",
+        "z": "5d3f7c11.023534",
+        "name": "airHumidityMsg",
+        "func": "if (global.get(\"control\") === true) {\n    let timestamp = Date.now();\n    let airHumidity = global.get(\"airHumidity\");\n    let payload = {\n        [timestamp]: airHumidity,\n    };\n    msg.payload = payload;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0abdcdc.837d",
+        "type": "function",
+        "z": "41719d6c.3cfb44",
+        "name": "soilMoistureMsg",
+        "func": "if (global.get(\"control\") === true) {\n    let timestamp = Date.now();\n    let soilMoisture = global.get(\"soilMoisture\");\n    let payload = {\n        [timestamp]: soilMoisture,\n    };\n    msg.payload = payload;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdca0114.d69de",
+        "type": "function",
+        "z": "f9d383cb.41058",
+        "name": "soilpHMsg",
+        "func": "if (global.get(\"control\") === true) {\n    let timestamp = Date.now();\n    let soilpH = global.get(\"soilpH\");\n    let payload = {\n        [timestamp]: soilpH,\n    };\n    msg.payload = payload;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 710,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f33a2102.a728",
+        "type": "function",
+        "z": "7a111b85.eca174",
+        "name": "soilSalinityMsg",
+        "func": "if (global.get(\"control\") === true) {\n    let timestamp = Date.now();\n    let soilSalinity = global.get(\"soilSalinity\");\n    let payload = {\n        [timestamp]: soilSalinity,\n    };\n    msg.payload = payload;\n    return msg;\n}\nelse {\n    return null;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c8b78a0.1d4308",
+        "type": "debug",
+        "z": "bb155f83.a4277",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "59fd8bd1.dc7b84",
+        "type": "addFirebase",
+        "z": "bb155f83.a4277",
+        "firebaseCertificate": "74df1345.04015c",
+        "client_email": "",
+        "private_key": "",
+        "data": "",
+        "childpath": "telemetry_data/jEFfkJOg9eU1aWaKblzxFV51qWE3/salinity",
+        "propertyType": "str",
+        "method": "update",
+        "newchildpath": "",
+        "x": 710,
+        "y": 460,
+        "wires": [
+            [
+                "7c8b78a0.1d4308"
+            ]
+        ]
+    },
+    {
+        "id": "4085dcbe.3c7024",
+        "type": "addFirebase",
+        "z": "bb155f83.a4277",
+        "firebaseCertificate": "74df1345.04015c",
+        "client_email": "",
+        "private_key": "",
+        "data": "",
+        "childpath": "telemetry_data/jEFfkJOg9eU1aWaKblzxFV51qWE3/pH",
+        "propertyType": "str",
+        "method": "update",
+        "newchildpath": "",
+        "x": 710,
+        "y": 380,
+        "wires": [
+            [
+                "7c8b78a0.1d4308"
+            ]
+        ]
+    },
+    {
+        "id": "fe4fd7ce.70c838",
+        "type": "addFirebase",
+        "z": "bb155f83.a4277",
+        "firebaseCertificate": "74df1345.04015c",
+        "client_email": "",
+        "private_key": "",
+        "data": "",
+        "childpath": "telemetry_data/jEFfkJOg9eU1aWaKblzxFV51qWE3/humidity",
+        "propertyType": "str",
+        "method": "update",
+        "newchildpath": "",
+        "x": 710,
+        "y": 140,
+        "wires": [
+            [
+                "7c8b78a0.1d4308"
+            ]
+        ]
+    },
+    {
+        "id": "663e13b2.82511c",
+        "type": "addFirebase",
+        "z": "bb155f83.a4277",
+        "firebaseCertificate": "74df1345.04015c",
+        "client_email": "",
+        "private_key": "",
+        "data": "",
+        "childpath": "telemetry_data/jEFfkJOg9eU1aWaKblzxFV51qWE3/temperature",
+        "propertyType": "str",
+        "method": "update",
+        "newchildpath": "",
+        "x": 710,
+        "y": 220,
+        "wires": [
+            [
+                "7c8b78a0.1d4308"
+            ]
+        ]
+    }
+]
