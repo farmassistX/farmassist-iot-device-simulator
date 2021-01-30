@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+---
+layout: default
+---
 
-You can use the [editor on GitHub](https://github.com/farmassistX/farmassist-iot-device-simulator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Farmassist IoT Device Simulator
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+*[Ray Jasson](mailto:holmesqueen2070@yahoo.com)*<br>
+*31/01/2021*<br>
 
-### Markdown
+<br>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## :satellite: IoT Device Simulation
 
-```markdown
-Syntax highlighted code block
+This is a minimal IoT device simulator built using [Node-RED](https://nodered.org/). It sends telemetry data to [Firebase Realtime Database](https://firebase.google.com/docs/database) for Farmassist app. There are 5 types of telemetry data:
+- Air Humidity (%)
+- Air Temperature (°C)
+- Soil Moisture (%)
+- Soil pH (pH)
+- Soil Salinity (Millisiemens/cm)
 
-# Header 1
-## Header 2
-### Header 3
+<p align=center><img src="/docs/img/nodes.png"></p>
+<p align="center"><i>Connected Nodes in Node-RED editor</i></p>
 
-- Bulleted
-- List
+<br>
 
-1. Numbered
-2. List
+<p align=center><img src="/docs/img/ui.png"></p>
+<p align="center"><i>UI Dashboard of the IoT Device Simulator</i></p>
 
-**Bold** and _Italic_ and `Code` text
+<br>
 
-[Link](url) and ![Image](src)
-```
+## :computer: How to Run the IoT Device Simulator
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The IoT device simulator is a Node-RED flow stored using JSON. The functions are written in JavaScript.
 
-### Jekyll Themes
+### Run the Node-RED flow locally
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/farmassistX/farmassist-iot-device-simulator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- To run the simulator locally, you will need a supported version of Node.js and Node-RED editor.
+- To install Node.js, download the recent version from [here](https://nodejs.org/en/download/).
+- To install Node-RED editor, run:
+  ```
+  npm install -g --unsafe-perm node-red
+  ```
+- Open Node-RED editor by running:
+  ```
+  node-red start
+  ```
+- Open [http://localhost:1880](http://localhost:1880) to view the editor in the browser.
+- 2 extra node modules: `node-red-dashboard` and `node-red-contrib-firebase-data`, are required to run the simulator. `node-red-dashboard` is used to create a dashboard, whereas `node-red-contrib-firebase-data` is used to connect the nodes to Firebase Realtime Database. To install them, run:
+  ```
+  npm install node-red-dashboard
+  npm install node-red-contrib-firebase-data
+  ```
+- Download the JSON file and import it into the Node-RED editor. You will see the import option at the upper-right corner of the editor.
 
-### Support or Contact
+### Customize the simulator
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- You need to add your Realtime Database URL into the configuration node. You can find the URL in the Realtime Database section of your Firebase console. The configuration node :gear: is located at the third option in the right panel.
+- Double-click `Add Firebase` node to configure your Firebase URL and set the child path to where the telemetry data is stored in the database. Also, there are several methods for you to write data into Realtime Database, for example, `set`, `push` or `update`. The default method in the JSON file is `update`.
+- Remember to click "Deploy" to save your configurations.
+- Open the dashboard, and use the sliders to select the range of the telemetry data you would want to send.
+- Toggle the switch to start/stop sending the telemetry data.
+
+<br>
+
+## :black_nib: References
+
+- [A YouTube tutorial teaching you how to build a Node-RED IoT Device Simulator](https://www.youtube.com/watch?v=2GcVvD08nGE)
+- [Reference for types of telemetry data from Microsoft Azure Virtual Hackathon 2020 in Asia Pacific](https://news.microsoft.com/apac/2020/08/20/drones-data-science-and-innovation-at-the-microsoft-azure-virtual-hackathon-in-asia-pacific/)
