@@ -9,7 +9,7 @@ layout: default
 
 <br>
 
-## :satellite: IoT Device Simulation
+## IoT Device Simulation
 
 This is a minimal IoT device simulator built using [Node-RED](https://nodered.org/). It sends telemetry data to [Firebase Realtime Database](https://firebase.google.com/docs/database) for Farmassist app. There are 5 types of telemetry data:
 - Air Humidity (%)
@@ -18,17 +18,17 @@ This is a minimal IoT device simulator built using [Node-RED](https://nodered.or
 - Soil pH (pH)
 - Soil Salinity (Millisiemens/cm)
 
-<p align=center><img src="/docs/img/nodes.png"></p>
+<p align=center><img src="./docs/img/nodes.png"></p>
 <p align="center"><i>Connected Nodes in Node-RED editor</i></p>
 
 <br>
 
-<p align=center><img src="/docs/img/ui.png"></p>
+<p align=center><img src="./docs/img/ui.png"></p>
 <p align="center"><i>UI Dashboard of the IoT Device Simulator</i></p>
 
 <br>
 
-## :computer: How to Run the IoT Device Simulator
+## How to Run the IoT Device Simulator
 
 The IoT device simulator is a Node-RED flow stored using JSON. The functions are written in JavaScript.
 
@@ -54,7 +54,7 @@ The IoT device simulator is a Node-RED flow stored using JSON. The functions are
 
 ### Customize the simulator
 
-- You need to add your Realtime Database URL into the configuration node. You can find the URL in the Realtime Database section of your Firebase console. The configuration node :gear: is located at the third option in the right panel.
+- You need to add your Realtime Database URL into the configuration node. You can find the URL in the Realtime Database section of your Firebase console. The configuration node is located at the third option in the right panel.
 - Double-click `Add Firebase` node to configure your Firebase URL and set the child path to where the telemetry data is stored in the database. Also, there are several methods for you to write data into Realtime Database, for example, `set`, `push` or `update`. The default method in the JSON file is `update`.
 - Remember to click "Deploy" to save your configurations.
 - Open the dashboard, and use the sliders to select the range of the telemetry data you would want to send.
@@ -62,7 +62,7 @@ The IoT device simulator is a Node-RED flow stored using JSON. The functions are
 
 <br>
 
-## :black_nib: References
+## References
 
 - [A YouTube tutorial teaching you how to build a Node-RED IoT Device Simulator](https://www.youtube.com/watch?v=2GcVvD08nGE)
 - [Reference for types of telemetry data from Microsoft Azure Virtual Hackathon 2020 in Asia Pacific](https://news.microsoft.com/apac/2020/08/20/drones-data-science-and-innovation-at-the-microsoft-azure-virtual-hackathon-in-asia-pacific/)
